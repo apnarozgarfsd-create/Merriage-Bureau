@@ -1,0 +1,126 @@
+/* Custom Fonts & Base Typography */
+body {
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.font-urdu {
+  font-family: 'Noto Nastaliq Urdu', 'Jameel Noori Nastaleeq', serif;
+  line-height: 1.8;
+}
+
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .font-urdu {
+  line-height: 2.1;
+}
+
+/* Form Section Styling */
+.form-section-card {
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+  border: 1px solid #e2e8f0;
+  padding: 1.25rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  margin-bottom: 1.25rem;
+}
+
+.form-section-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.75rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #f1f5f9;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #064e3b;
+}
+
+/* Badges */
+.badge-active {
+  background-color: #dcfce7;
+  color: #15803d;
+  border: 1px solid #bbf7d0;
+}
+
+.badge-matched {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.badge-onhold {
+  background-color: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.badge-inactive {
+  background-color: #f1f5f9;
+  color: #64748b;
+  border: 1px solid #e2e8f0;
+}
+
+/* Print Specific Rules for Official Marriage Bureau A4 Form */
+@media print {
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+    font-size: 11pt !important;
+  }
+
+  #topNavbar,
+  #appSidebar,
+  #mainContent,
+  #viewModalBackdrop,
+  #deleteConfirmModal,
+  #toastContainer {
+    display: none !important;
+  }
+
+  #printSection {
+    display: block !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .print-page {
+    page-break-after: always;
+    box-sizing: border-box;
+    padding: 15mm;
+  }
+
+  .print-header {
+    text-align: center;
+    border-bottom: 2px double #064e3b;
+    padding-bottom: 8px;
+    margin-bottom: 12px;
+  }
+
+  .print-box {
+    border: 1px solid #333333;
+    margin-bottom: 8px;
+  }
+
+  .print-box-header {
+    background-color: #f0fdf4 !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+    font-weight: bold;
+    font-size: 10pt;
+    padding: 4px 8px;
+    border-bottom: 1px solid #333333;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .print-box-content {
+    padding: 6px 8px;
+    font-size: 9.5pt;
+  }
+}

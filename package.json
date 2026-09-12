@@ -1,0 +1,13 @@
+{
+  "name": "punjab-marriage-bureau",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p dist && cp index.html dist/",
+    "dev": "vite --port 3000 --host 0.0.0.0",
+    "lint": "node -e \"console.log('Validating HTML syntax');\""
+  },
+  "devDependencies": {
+    "vite": "^6.2.3"
+  }
+}

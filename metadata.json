@@ -1,0 +1,6 @@
+{
+  "name": "Punjab Marriage Bureau Management System",
+  "description": "Professional Marriage Bureau Management System for Punjab International Welfare Foundation with bilingual Urdu/English interface, rishta profile management, photo upload, statistics dashboard, and printable forms.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
